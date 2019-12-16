@@ -163,7 +163,7 @@ class BentoAPIServer:
         """
         track_server('flask')
 
-        self.app.run(port=self.port)
+        self.app.run(host='0.0.0.0',port=self.port)
 
     @staticmethod
     def index_view_func():
